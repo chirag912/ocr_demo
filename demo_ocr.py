@@ -47,7 +47,6 @@ if filename is not None:
 
   #Getting Invoice Number
   ino = findword(text1, ['INVOICE NO','INVOICE NO.','SALES CONTRACT','SC REF.', 'OUR REF'])
-  st.write(ino)
   ind = findword(text1, ['INVOICE DATE', 'DATE'])
 
 
@@ -80,6 +79,11 @@ if filename is not None:
       st.write("\nINVOICE NUMBER: ",data_loaded['INVOICE NUMBER'])
       st.write("\nINVOICE DATE: ",data_loaded['INVOICE DATE'])
       st.write("\n-------------------------------------")
+
+    if st.button("See Raw Extraction"):
+      st.write("\n---------- Invoice Raw Extraction ----------")
+      st.write(text)
+      st.write("\n--------------------------------------------")
 
   except:
     st.write("\n------------------------- False Documents ---------------------------")
