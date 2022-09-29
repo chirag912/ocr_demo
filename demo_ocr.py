@@ -14,7 +14,7 @@ st.title('OCR Demo')
 st.write('OCR Of Invoice Bill')
 
 # Specifying the path
-pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = r'/home/usr/bin/tesseract'
 
 
 # Function to Find a particular Word in a Sentence.
